@@ -40,6 +40,8 @@
     #skills .card p { line-height: 1.8; }
     #resume .btn { height: auto; min-height: 36px; white-space: normal; }
     #contact a { overflow-wrap: anywhere; }
+    #places-travelled .travel-map { display: block; width: 100%; height: 480px; border: 0; }
+    #places-travelled .card-action a { color: #00695c; }
     section { scroll-margin-top: 20px; }
     @media (max-width: 992px) {
       .name-title { pointer-events: none; }
@@ -69,6 +71,7 @@
       <li class="bold"><a href="#projects" aria-label="Navigate to the Projects section" class="waves-effect waves-dark teal-text"><i class="mdi-av-my-library-books small" aria-hidden="true"></i><span>Projects</span></a></li>
       <li class="bold"><a href="#skills" aria-label="Navigate to the Skills section" class="waves-effect waves-dark teal-text"><i class="mdi-action-assessment small" aria-hidden="true"></i><span>Skills</span></a></li>
       <li class="bold"><a href="#education" aria-label="Navigate to the Education section" class="waves-effect waves-dark teal-text"><i class="mdi-social-school small" aria-hidden="true"></i><span>Education</span></a></li>
+      <li class="bold"><a href="#places-travelled" aria-label="Navigate to the Places Travelled section" class="waves-effect waves-dark teal-text"><i class="mdi-maps-place small" aria-hidden="true"></i><span>Places Travelled</span></a></li>
       <li class="bold"><a href="#contact" aria-label="Navigate to the Contact section" class="waves-effect waves-dark teal-text"><i class="mdi-content-mail small" aria-hidden="true"></i><span>Contact</span></a></li>
       <li class="bold"><a href="#resume" aria-label="Navigate to the Resume section" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small" aria-hidden="true"></i><span>Resume</span></a></li>
     </ul>
@@ -84,6 +87,7 @@
       <li class="bold"><a href="#projects" aria-label="Navigate to the Projects section" class="waves-effect waves-dark teal-text"><i class="mdi-av-my-library-books small" aria-hidden="true"></i><span>Projects</span></a></li>
       <li class="bold"><a href="#skills" aria-label="Navigate to the Skills section" class="waves-effect waves-dark teal-text"><i class="mdi-action-assessment small" aria-hidden="true"></i><span>Skills</span></a></li>
       <li class="bold"><a href="#education" aria-label="Navigate to the Education section" class="waves-effect waves-dark teal-text"><i class="mdi-social-school small" aria-hidden="true"></i><span>Education</span></a></li>
+      <li class="bold"><a href="#places-travelled" aria-label="Navigate to the Places Travelled section" class="waves-effect waves-dark teal-text"><i class="mdi-maps-place small" aria-hidden="true"></i><span>Places Travelled</span></a></li>
       <li class="bold"><a href="#contact" aria-label="Navigate to the Contact section" class="waves-effect waves-dark teal-text"><i class="mdi-content-mail small" aria-hidden="true"></i><span>Contact</span></a></li>
       <li class="bold"><a href="#resume" aria-label="Navigate to the Resume section" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small" aria-hidden="true"></i><span>Resume</span></a></li>
     </ul>
@@ -309,6 +313,28 @@
           </div>
           <div class="card-action"><span>September 2021 – April 2027 (expected)</span></div>
         </article>
+      </div>
+    </section>
+    <section id="places-travelled" class="section scrollspy">
+      <h3 class="page-title white-text teal">Places Travelled</h3>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <p>Places I’ve travelled: Shanghai and Beijing in China, and Vancouver and Toronto in Canada. Select a pin to explore each city.</p>
+          </div>
+          <iframe
+            class="travel-map"
+            title="Places travelled: Shanghai, Beijing, Vancouver and Toronto"
+            src="https://www.google.com/maps/d/embed?mid=10PIkjeuQr44LDFO40-R1Cxjm_iZxmEA&amp;ehbc=2E312F"
+            width="640"
+            height="480"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+          <!-- <div class="card-action">
+            <a href="https://www.google.com/maps/d/viewer?mid=10PIkjeuQr44LDFO40-R1Cxjm_iZxmEA" target="_blank" rel="noopener noreferrer">Open travel map in Google Maps</a>
+          </div> -->
+        </div>
       </div>
     </section>
     <section id="contact" class="section scrollspy">
