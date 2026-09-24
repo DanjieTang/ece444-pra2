@@ -25,6 +25,7 @@ https://github.com/varadbhogayata/varadbhogayata.github.io
 
 ## Features 📋
 ⚡️ Fully Responsive\
+⚡️ Dark mode with system-theme detection and a saved preference\
 ⚡️ Valid HTML5 & CSS3\
 ⚡️ Typing animation using `Typed.js`\
 ⚡️ Easy to modify
