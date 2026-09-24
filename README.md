@@ -1,7 +1,7 @@
 # Danjie's Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
-> https://github.com/DanjieTang/ece444-pra2
+> https://github.com/DanjieTang/ece444-pra2 
 
 This repository is based on
 https://github.com/varadbhogayata/varadbhogayata.github.io
