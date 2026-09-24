@@ -33,6 +33,7 @@
     #projects .project-card { flex: 1 1 320px; margin: 0; display: flex; flex-direction: column; }
     #projects .project-card .card-content { flex: 1; }
     #projects .project-card .card-action a { margin-right: 0; color: #00695c; }
+    .load-more-wrap { text-align: center; margin-top: 24px; }
     .project-date { color: #666; font-size: 15px; }
     .project-tools { font-size: 15px; font-weight: 500; }
     .publication-list li { margin-bottom: 16px; }
@@ -238,52 +239,9 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="project-grid">
-          <article class="card project-card">
-            <div class="card-content">
-              <h4 class="card-title teal-text">GemmaLLM</h4>
-              <p class="project-date">Mar 2024 – Apr 2024</p>
-              <p>Implemented the Gemma language model architecture from scratch in PyTorch and trained it on 6.5 million English Wikipedia pages, approximately two billion tokens.</p>
-              <p class="project-tools">PyTorch · Large language models</p>
-            </div>
-            <div class="card-action"><a href="https://github.com/DanjieTang/FoundationLLM" target="_blank" rel="noopener noreferrer" class="hoverline">View source on GitHub</a></div>
-          </article>
-          <article class="card project-card">
-            <div class="card-content">
-              <h4 class="card-title teal-text">Diffusion CIFAR10</h4>
-              <p class="project-date">Sep 2023 – Oct 2023</p>
-              <p>Built a generative model for CIFAR-10 images using diffusion and classifier-free guidance.</p>
-              <p class="project-tools">PyTorch · Diffusion models</p>
-            </div>
-            <div class="card-action"><a href="https://github.com/DanjieTang/MyTripOnDeepLearning/tree/main/Diffusino%20Model" target="_blank" rel="noopener noreferrer" class="hoverline">View source on GitHub</a></div>
-          </article>
-          <article class="card project-card">
-            <div class="card-content">
-              <h4 class="card-title teal-text">Conversational Recommendation System</h4>
-              <p class="project-date">May 2023 – Aug 2023</p>
-              <p>Developed LLM-ConvRec, a prompt-based conversational recommendation system that combines GPT with semi-structured state tracking for natural interactions.</p>
-              <p class="project-tools">Python · PyTorch · Prompt engineering</p>
-            </div>
-            <div class="card-action"><a href="https://github.com/D3Mlab/llm-convrec" target="_blank" rel="noopener noreferrer" class="hoverline">View source on GitHub</a></div>
-          </article>
-          <article class="card project-card">
-            <div class="card-content">
-              <h4 class="card-title teal-text">My Map</h4>
-              <p class="project-date">Jan 2023 – Apr 2023</p>
-              <p>Placed third in the ECE297 Courier Problem Contest using simulated annealing and parallel programming, among more than 100 teams and 87 valid submissions.</p>
-              <p class="project-tools">C++ · GTK · Optimization</p>
-            </div>
-            <div class="card-action"><a href="https://www.linkedin.com/in/danjie-tang/details/projects/" target="_blank" rel="noopener noreferrer" class="hoverline">View project on LinkedIn</a></div>
-          </article>
-          <article class="card project-card">
-            <div class="card-content">
-              <h4 class="card-title teal-text">Video Game</h4>
-              <p class="project-date">Sep 2020 – Dec 2020</p>
-              <p>Combined graphical interface design and object-oriented programming to build a game with an advanced AI opponent.</p>
-              <p class="project-tools">GUI design · Object-oriented programming</p>
-            </div>
-            <div class="card-action"><a href="https://github.com/DanjieTang/favourite-project-high-school" target="_blank" rel="noopener noreferrer" class="hoverline">View source on GitHub</a></div>
-          </article>
+        <div class="project-grid" id="project-grid"></div>
+        <div class="load-more-wrap">
+          <button type="button" id="load-more" class="btn waves-effect waves-light teal">Load More</button>
         </div>
         <h4>Research Publications</h4>
         <ul class="publication-list">
@@ -361,6 +319,7 @@
       </div>
     </section>
   </main>
+  <script src="assets/js/projects.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script>
     if (window.Typed && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
